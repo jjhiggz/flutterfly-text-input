@@ -51,5 +51,12 @@ window.addEventListener('load', () => {
     router.navigateTo(path);
   });
 
+  CodeMirror.fromTextArea(document.querySelector('#editor'),{
+    lineNumbers: true,
+    matchBrackets: true,
+    mode: 'text/x-markdown',
+    theme: 'material'
+  });
+
 });
 

@@ -1,5 +1,8 @@
 <html lang="en">
 <head>
+  <script src="../node_modules/codemirror/lib/codemirror.js" defer></script>
+  <script src="../node_modules/codemirror/mode/xml/xml.js" defer></script>
+  <link rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,7 +36,7 @@
           <i class="exclamation triangle icon"></i>
           <div class="content">
             {{title}}
-            <div class="sub header">{{message}}</div>
+          <div class="sub header">{{message}}</div>
           </div>
         </h2>
       </div>
@@ -47,11 +50,18 @@
 <script id="sign-in-template" type="text/x-handlebars-template">
   <h1 class="ui header">Sign-In</h1>
   <hr>
+
+  
 </script>
 
 <!-- Exchange Conversion Template -->
 <script id="create-trivia-question-template" type="text/x-handlebars-template">
   <h1 class="ui header"> Create Trivia Question </h1>
+  <textarea name="" id= "editor"><p>sadjfkjh</p>ASDFHJDSFAKJH</textarea>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById('editor'));
+    console.log('set')
+  </script>
   <hr>
 </script>
 

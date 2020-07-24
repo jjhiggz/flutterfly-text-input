@@ -1,0 +1,14 @@
+{
+  "name": "questionseeder",
+  "version": "1.0.0",
+  "description": "This is a project designed to input code text into a firebase database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codemirror": "^5.56.0"
+  }
+}
